@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>List Product Page </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/list_prd.css">
+	<link rel="stylesheet" type="text/css" href="./css/head-nav-foot.css">
+	<script src="./javascript.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body>
+	<div class="container-fluid">
+		<header id="header" class="">
+			<div class="top-header">
+				<div class="container content-top-header">
+					<div class="infor-left">
+						<span><i class="fa fa-map-marker"></i> 13 Thanh Vinh 8 Đà Nẵng | <i class="fa fa-phone"></i> 0979081574</span>
+					</div>
+					<div class="infor-right">
+						<span>
+							<a href=""><i class="fa fa-facebook"></i></a>
+							<a href=""><i class="fa fa-instagram"></i></a>
+							<a href=""><i class="fa fa-twitter"></i></a>
+							<a href=""> Tài Khoản <i class="fa fa-caret-down"></i></a>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="logo-search-cart container">
+				<div class="row" style="padding:15px 0; align-items: center">
+					<div class="col-lg-4 col-md-3 col-sm-3 col-12 logo">
+						<a href="#"><img src="./images/logo.png" alt=""></a>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-7 search">
+						<form action="">
+							<input type="text" name="" placeholder="Tìm kiếm ...">
+							<button type="search"><i class="fa fa-search"></i></button>
+						</form>
+					</div>
+					<div class="col-lg-2 col-md-3 col-sm-3 col-5 cart" style="padding-left: 0">
+						<span><i class="fa fa-shopping-cart"></i> 0 Sản phẩm </span>
+					</div>
+				</div>
+			</div>
+		</header><!-- /header -->
+		<nav >
+			<div class="container menu" id="myNav">
+				<a href="./index.html" title="">Trang chủ</a>
+				<a href="./list_product.html" class="res-item" title="">Sản phẩm <i class="fa fa-caret-down"></i></a>
+				<a href="" class="res-item" title="">Thanh toán</a>
+				<a href="./news.html" class="res-item" title="">Tin tức</a>
+				<a href="" class="res-item" title="">Giới thiệu</a>
+				<a href="./contact.html" class="res-item" title="">Liên hệ</a>
+				<a href="javascript:void(1);" class="navbar-icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+			</div>
+		</nav><!-- /nav -->
+		<nav class="sub-nav">
+			<div class="container">
+				<span><a href="./index.html">Trang chủ </a> &#62; <a href="./list_product.html">Danh mục </a> &#62; <a href="#">Tất cả sản phẩm </a></span>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="row all-prd">
+				<div class="col-lg-10 col-md-10 col-sm-10 col-9 title-prd">
+					<h3>Tất cả sản phẩm</h3>
+				</div> 
+				<div class="icon-list">
+					<i class="fa fa-table"></i>
+					<i class="fa fa-list-alt"></i>
+				</div>
+			</div>
+		</div><!-- /.title-prd -->
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-3 col-sm-4 col-12 side">
+					<div class="title-filter">
+						<h3>Lọc sản phẩm</h3>
+					</div>
+					<article class="category">
+						<div class=" title category-name">
+							<h4>Danh mục</h4>
+						</div>
+						<div class="category-content">
+							<ul>
+								<li><a href="">Pepsi</a></li>
+								<li><a href="">Aquafina</a></li>
+								<li><a href="">7 up</a></li>
+								<li><a href="">Sting</a></li>
+								<li><a href="">Lipton ice tea</a></li>
+								<li><a href="">Twister</a></li>
+							</ul>
+						</div>
+					</article>
+					<article class="trademark">
+						<div class=" title trademark-name">
+							<h4>Thương hiệu</h4>
+						</div>
+						<div class="form-searchs trademark-content">
+							<form action="" method="get" accept-charset="utf-8">
+								<div class="searchs search-trademark">
+									<input type="text" placeholder="Thương hiệu...">
+									<button><i class="fa fa-search"></i></button>
+								</div>
+								<p><label><input type="checkbox" name="" value="">Khác</label></p>
+							</form>
+						</div>
+					</article>
+					<article class="prices">
+						<div class=" title prices-name">
+							<h4>Đơn giá</h4>
+						</div>
+						<div class="prices-content">
+							<p><label><input type="radio" name="prices" value="">Nhỏ hơn 5,000 đ</label></p>
+							<p><label><input type="radio" name="prices" value="">Từ 5,000 đ đến 10,000 đ</label></p>
+							<p><label><input type="radio" name="prices" value="">Từ 10,000 đ đến 15,000 đ</label></p>
+							<p><label><input type="radio" name="prices" value="">Từ 15,000 đ đến 20,000 đ</label></p>
+							<p><label><input type="radio" name="prices" value="">Trên 20,000 đ</label></p>
+						</div>
+					</article>
+					<article class="root">
+						<div class= "title root-name">
+							<h4>Nguồn gốc</h4>
+						</div>
+						<div class="form-searchs root-content">
+							<form action="" method="get" accept-charset="utf-8">
+								<div class=" searchs search-root">
+									<input type="text" placeholder="Nguồn gốc...">
+									<button><i class="fa fa-search"></i></button>
+								</div>
+								<p><label><input type="checkbox" name="" value="">Nội địa</label></p>
+								<p><label><input type="checkbox" name="" value="">Nhập khẩu</label></p>
+							</form>
+						</div>
+					</article>
+					<article class="supplier">
+						<div class=" title supplier-name">
+							<h4>Nhà cung cấp</h4>
+						</div>
+						<div class="form-searchs supplier-content">
+							<form action="" method="get" accept-charset="utf-8">
+								<div class="searchs search-supplier">
+									<input type="text" placeholder="Nhà cung cấp...">
+									<button><i class="fa fa-search"></i></button>
+								</div>
+								<p><label><input type="checkbox" name="" value="">Vinmart</label></p>
+								<p><label><input type="checkbox" name="" value="">Big C</label></p>
+								<p><label><input type="checkbox" name="" value="">VinCom</label></p>
+								<p><label><input type="checkbox" name="" value="">Khác</label></p>
+							</form>
+						</div>
+					</article>
+				</div> <!-- /aside -->
+				<div class="col-lg-9 col-md-9 col-sm-8 col-12 list-group" style="padding:0">
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+							<div class="prd-item">
+								<div class="prd-img">
+									<img src="./images/pepsi-glass-bottle-drawing.png" alt="">
+								</div>
+								<div class="prd-infor">
+									<h5>pepsi glass bottle drawing</h5>
+									<div class="prd-price">12 000 đ</div>
+									<div class="view-cart-like">
+										<button type="button"><a href="./prd_infor.html"><i class="fa fa-eye"></i></a></button>
+										<button>Chọn mua</button>
+										<button type="button"><i class="fa fa-heart"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+							<div class="prd-item">
+								<div class="prd-img">
+									<img src="./images/pepsi-glass-bottle-drawing.png" alt="">
+								</div>
+								<div class="prd-infor">
+									<h5>pepsi glass bottle drawing</h5>
+									<div class="prd-price">12 000 đ</div>
+									<div class="view-cart-like">
+										<button type="button"><a href="./prd_infor.html"><i class="fa fa-eye"></i></a></button>
+										<button>Chọn mua</button>
+										<button type="button"><i class="fa fa-heart"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+							<div class="prd-item">
+								<div class="prd-img">
+									<img src="./images/pepsi-glass-bottle-drawing.png" alt="">
+								</div>
+								<div class="prd-infor">
+									<h5>pepsi glass bottle drawing</h5>
+									<div class="prd-price">12 000 đ</div>
+									<div class="view-cart-like">
+										<button type="button"><a href="./prd_infor.html"><i class="fa fa-eye"></i></a></button>
+										<button>Chọn mua</button>
+										<button type="button"><i class="fa fa-heart"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+							<div class="prd-item">
+								<div class="prd-img">
+									<img src="./images/pepsi-glass-bottle-drawing.png" alt="">
+								</div>
+								<div class="prd-infor">
+									<h5>pepsi glass bottle drawing</h5>
+									<div class="prd-price">12 000 đ</div>
+									<div class="view-cart-like">
+										<button type="button"><a href="./prd_infor.html"><i class="fa fa-eye"></i></a></button>
+										<button>Chọn mua</button>
+										<button type="button"><i class="fa fa-heart"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+							<div class="prd-item">
+								<div class="prd-img">
+									<img src="./images/pepsi-glass-bottle-drawing.png" alt="">
+								</div>
+								<div class="prd-infor">
+									<h5>pepsi glass bottle drawing</h5>
+									<div class="prd-price">12 000 đ</div>
+									<div class="view-cart-like">
+										<button type="button"><a href="./prd_infor.html"><i class="fa fa-eye"></i></a></button>
+										<button>Chọn mua</button>
+										<button type="button"><i class="fa fa-heart"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+							<div class="prd-item">
+								<div class="prd-img">
+									<img src="./images/pepsi-glass-bottle-drawing.png" alt="">
+								</div>
+								<div class="prd-infor">
+									<h5>pepsi glass bottle drawing</h5>
+									<div class="prd-price">12 000 đ</div>
+									<div class="view-cart-like">
+										<button type="button"><a href="./prd_infor.html"><i class="fa fa-eye"></i></a></button>
+										<button>Chọn mua</button>
+										<button type="button"><i class="fa fa-heart"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+							<div class="prd-item">
+								<div class="prd-img">
+									<img src="./images/pepsi-glass-bottle-drawing.png" alt="">
+								</div>
+								<div class="prd-infor">
+									<h5>pepsi glass bottle drawing</h5>
+									<div class="prd-price">12 000 đ</div>
+									<div class="view-cart-like">
+										<button type="button"><a href="./prd_infor.html"><i class="fa fa-eye"></i></a></button>
+										<button>Chọn mua</button>
+										<button type="button"><i class="fa fa-heart"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+							<div class="prd-item">
+								<div class="prd-img">
+									<img src="./images/pepsi-glass-bottle-drawing.png" alt="">
+								</div>
+								<div class="prd-infor">
+									<h5>pepsi glass bottle drawing</h5>
+									<div class="prd-price">12 000 đ</div>
+									<div class="view-cart-like">
+										<button type="button"><a href="./prd_infor.html"><i class="fa fa-eye"></i></a></button>
+										<button>Chọn mua</button>
+										<button type="button"><i class="fa fa-heart"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+							<div class="prd-item">
+								<div class="prd-img">
+									<img src="./images/pepsi-glass-bottle-drawing.png" alt="">
+								</div>
+								<div class="prd-infor">
+									<h5>pepsi glass bottle drawing</h5>
+									<div class="prd-price">12 000 đ</div>
+									<div class="view-cart-like">
+										<button type="button"><a href="./prd_infor.html"><i class="fa fa-eye"></i></a></button>
+										<button>Chọn mua</button>
+										<button type="button"><i class="fa fa-heart"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+							<div class="prd-item">
+								<div class="prd-img">
+									<img src="./images/pepsi-glass-bottle-drawing.png" alt="">
+								</div>
+								<div class="prd-infor">
+									<h5>pepsi glass bottle drawing</h5>
+									<div class="prd-price">12 000 đ</div>
+									<div class="view-cart-like">
+										<button type="button"><a href="./prd_infor.html"><i class="fa fa-eye"></i></a></button>
+										<button>Chọn mua</button>
+										<button type="button"><i class="fa fa-heart"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+							<div class="prd-item">
+								<div class="prd-img">
+									<img src="./images/pepsi-glass-bottle-drawing.png" alt="">
+								</div>
+								<div class="prd-infor">
+									<h5>pepsi glass bottle drawing</h5>
+									<div class="prd-price">12 000 đ</div>
+									<div class="view-cart-like">
+										<button type="button"><a href="./prd_infor.html"><i class="fa fa-eye"></i></a></button>
+										<button>Chọn mua</button>
+										<button type="button"><i class="fa fa-heart"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+							<div class="prd-item">
+								<div class="prd-img">
+									<img src="./images/pepsi-glass-bottle-drawing.png" alt="">
+								</div>
+								<div class="prd-infor">
+									<h5>pepsi glass bottle drawing</h5>
+									<div class="prd-price">12 000 đ</div>
+									<div class="view-cart-like">
+										<button type="button"><a href="./prd_infor.html"><i class="fa fa-eye"></i></a></button>
+										<button>Chọn mua</button>
+										<button type="button"><i class="fa fa-heart"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+							<div class="prd-item">
+								<div class="prd-img">
+									<img src="./images/pepsi-glass-bottle-drawing.png" alt="">
+								</div>
+								<div class="prd-infor">
+									<h5>pepsi glass bottle drawing</h5>
+									<div class="prd-price">12 000 đ</div>
+									<div class="view-cart-like">
+										<button type="button"><a href="./prd_infor.html"><i class="fa fa-eye"></i></a></button>
+										<button>Chọn mua</button>
+										<button type="button"><i class="fa fa-heart"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+							<div class="prd-item">
+								<div class="prd-img">
+									<img src="./images/pepsi-glass-bottle-drawing.png" alt="">
+								</div>
+								<div class="prd-infor">
+									<h5>pepsi glass bottle drawing</h5>
+									<div class="prd-price">12 000 đ</div>
+									<div class="view-cart-like">
+										<button type="button"><a href="./prd_infor.html"><i class="fa fa-eye"></i></a></button>
+										<button>Chọn mua</button>
+										<button type="button"><i class="fa fa-heart"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+							<div class="prd-item">
+								<div class="prd-img">
+									<img src="./images/pepsi-glass-bottle-drawing.png" alt="">
+								</div>
+								<div class="prd-infor">
+									<h5>pepsi glass bottle drawing</h5>
+									<div class="prd-price">12 000 đ</div>
+									<div class="view-cart-like">
+										<button type="button"><a href="./prd_infor.html"><i class="fa fa-eye"></i></a></button>
+										<button>Chọn mua</button>
+										<button type="button"><i class="fa fa-heart"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12">
+							<div class="prd-item">
+								<div class="prd-img">
+									<img src="./images/pepsi-glass-bottle-drawing.png" alt="">
+								</div>
+								<div class="prd-infor">
+									<h5>pepsi glass bottle drawing</h5>
+									<div class="prd-price">12 000 đ</div>
+									<div class="view-cart-like">
+										<button type="button"><a href="./prd_infor.html"><i class="fa fa-eye"></i></a></button>
+										<button>Chọn mua</button>
+										<button type="button"><i class="fa fa-heart"></i></button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="justify-content: center">
+						<div class="pagination">
+							<a href="#">&laquo;</a>
+							<a href="#" class="active">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+							<a href="#">4</a>
+							<a href="#">&raquo;</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!--  .main -->
+		<footer>
+			<div class="top-foot">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5 col-md-4 col-sm-3 col-12" style="padding: 0">
+							<div class="row">
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6 phone">
+									<span><i class="fa fa-phone"></i></span>
+								</div>
+								<div class="col-lg-6 col-md-6 col-sm-6 col-6 email">
+									<span><i class="fa fa-envelope"></i></span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-7 col-md-8 col-sm-9 col-12" style="padding: 0">
+							<div class="row">
+								<div class="col-lg-5 col-md-5 col-sm-5 col-12 registration-title">
+									<h3>Đăng kí nhận tin</h3>
+								</div>
+								<div class="col-lg-5 col-md-5 col-sm-5 col-9 registration-input">
+									<input type="text" name="" value="" placeholder="Email của bạn...">
+								</div>
+								<div class="col-lg-2 col-md-2 col-sm-2 col-3 registration-btn" style="padding-left: 0">
+									<button type="button">Đăng ký</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="link-foot">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12 link-item support">
+							<h4>Thông tin hỗ trợ</h4>
+							<p class="line-color"></p>
+							<p><a href="">Giới thiệu</a></p>
+							<p><a href="">Chính sách bán hàng</a></p>
+							<p><a href="">Chính sách đổi trả</a></p>
+							<p><a href="">Bản đồ hướng đi</a></p>
+							<p><a href="">Liên hệ</a></p>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12 link-item custum">
+							<h4>Hỗ trợ khách hàng</h4>
+							<p class="line-color"></p>
+							<p><a href="">Liên hệ</a></p>
+							<p><a href="">Mua hàng từ xa</a></p>
+							<p><a href="">Chính sách bảo hành</a></p>
+							<p><a href="">Chính sách trả góp</a></p>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12 link-item account">
+							<h4>Tài khoản</h4>
+							<p class="line-color"></p>
+							<p><a href="">Đăng nhập/ Đăng kí</a></p>
+							<p><a href="">Giỏ hàng</a></p>
+							<p><a href="">Thêm sản phẩm </a></p>
+							<p><a href="">Thanh toán</a></p>
+						</div>
+						<div class="col-lg-3 col-md-3 col-sm-6 col-12 link-item contact">
+							<h4>Thông tin liên hệ</h4>
+							<p class="line-color"></p>
+							<p><a href=""><i class="fa fa-home"></i> Số 13 Vinh Thanh, Đà Nẵng</a></p>
+							<p><a href=""><i class="fa fa-phone"></i> 0979081574</a></p>
+							<p><a href=""><i class="fa fa-envelope"></i> Tienndpd03947@fpt.edu.vn</a></p>
+							<p>Stay in touch on</p>
+							<p>
+								<a href=""><i class="fa fa-wifi" style="color: #FFF600; padding: 5px"></i></a>
+								<a href=""><i class="fa fa-twitter" style="color: #45b0e3; padding: 5px"></i></a>
+								<a href=""><i class="fa fa-facebook" style="color: #0a52ee; padding: 5px"></i></a>
+								<a href=""><i class="fa fa-google-plus" style="color: #f36d55; padding: 5px"></i></a>
+								<a href=""><i class="fa fa-"style="color: #f6101a; padding: 5px"></i></a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<div class="end-foot">
+				<div class="container">
+					<p>© Suntory PepsiCo Vietnam Beverage 2020</p>
+					<p>
+						<i class="fa fa-cc-apple-pay"></i>
+						<i class="fa fa-cc-mastercard"></i>
+						<i class="fa fa-cc-paypal"></i>
+						<i class="fa fa-cc-visa"></i>
+					</p>
+				</div>
+			</div>
+		</footer> <!-- /footer-->
+	</div>
+</body>
+</html>
