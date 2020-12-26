@@ -1,0 +1,231 @@
+.sub-nav{
+	background-color: #dbdbdb;
+	height: 40px;
+}
+
+.sub-nav .container{
+	padding: 0 10px;
+}
+
+.sub-nav .container span a{
+	line-height: 40px;
+	text-decoration: none;
+	color: #474747;
+}
+
+.sub-nav .container span a:hover{
+	color: #ff4f00;
+}
+/* End sub menu */
+
+
+.row.all-prd{
+	margin: 10px 10px 5px 10px;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #00427e;
+}
+
+.title-prd h3{
+	margin: 0; 
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 600;
+	font-size: 16px;
+}
+
+.icon-list i{
+	font-size: 30px;
+	color: #fff;
+	margin-right: 10px;
+}
+/* End .title-prd */
+
+.side .title-filter h3{
+	margin: 0;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 40px;
+	background-color: #00529c;
+	color: #fff;
+	text-align: center
+}
+
+.side article{
+	background-color: #006fd3;
+	padding: 10px;
+	margin-top: 5px;
+}
+
+.side article .title h4{
+	margin: 0;
+	border-bottom: 1px solid #00427e;
+}
+
+.category-content ul li a{
+	text-decoration: none;
+	color: #474747;
+	line-height: 22px
+}
+
+.category-content ul li a:hover{
+	font-weight: 600;
+	text-shadow: 0 0 1px #000;
+}
+/* /.category */
+.form-searchs{
+	padding-top: 10px;
+}
+
+.form-searchs .searchs{
+	position: relative
+}
+
+.form-searchs .searchs>input[type="text"]::placeholder{
+	color: #474747
+}
+
+.form-searchs .searchs input{
+	width: 100%;
+	height: 26px;
+	background-color: #00529c;
+	outline: none;
+	border: none;
+	padding-left: 10px;
+	color: #fff
+}
+
+.form-searchs .searchs input:focus{
+	box-shadow: 0 0 1px #000
+}
+
+.form-searchs .searchs button{
+	outline: none;
+	border: none;
+	background-color: #00529c;
+	position: absolute;
+	top: 2px ;
+	right: 0;
+}
+
+.form-searchs .searchs button i{
+	color: #000;
+	font-size: 18px
+}
+
+.form-searchs .searchs button:hover i{
+	color: #00529c;
+	text-shadow: 0 0 1px #000
+}
+
+.form-searchs p label:hover{
+	text-shadow: 0 0 1px #000
+}
+
+.form-searchs p label input{
+	margin-right: 5px;
+}
+
+.prices-content p{
+	margin: 10px 0;
+}
+
+.prices-content p label input{
+	margin: 0;
+	margin-right: 5px;
+}
+
+.prices-content p label:hover{
+	text-shadow: 0 0 1px #000
+}
+/* /.prices */
+.list-group{
+	padding: 0;
+}
+
+.prd-item{
+	border: 1px solid #474747;
+}
+
+.prd-item:hover{
+	box-shadow: 0 0 3px #000
+}
+
+.prd-img img{
+	max-width: 100%;
+	height: auto;
+}
+
+.prd-infor{
+	padding: 0 10px;
+}
+
+.prd-infor h5{
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #474747;
+	margin: 8px 0;
+}
+
+.prd-infor .prd-price{
+	color: #ff4f00;
+	font-weight: 600;
+}
+
+.prd-infor .view-cart-like{
+	margin: 10px 0;
+	text-align: center;
+}
+
+.prd-infor .view-cart-like button{
+	outline: none;
+	background-color: #fff;
+	border: 1px solid #474747;
+	padding: 2px 5px;
+}
+
+/* pagination */
+.pagination {
+	padding-top: 20px;
+	display: flex;
+	flex-direction: row;
+}
+
+.pagination a {
+	margin: 0 5px;
+	color: #00325f;
+	display:block;
+	padding: 6px 12px;
+	text-decoration: none;
+	transition: background-color .3s;
+}
+.pagination a.active {
+	background-color: #00529c;
+	color: #fff;
+}
+
+.pagination a:hover:not(.active) {
+	background-color: #00325f;
+	color: #fff;
+}
+
+/* Màn hình lớn hơn hoặc bằng 980px */
+@media (min-width: 980px) {
+	
+}
+
+
+/* Màn hình bé hơn hoặc bằng 980 */
+@media (max-width: 980px) {
+  	
+}
+
+/* màn hình bé hơn hoặc bằng 800px */
+@media (max-width: 800px) {
+  	
+}
+/* Màn hình bé hơn hoặc bằng 600px */
+@media (max-width: 600px) {
+	
+}
